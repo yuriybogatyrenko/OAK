@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Пансионат «ЗЕНИТ» </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="http://vjs.zencdn.net/5.6.0/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="_main.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="container">
+          <div class="logo header__logo"><a href="/" class="logo__link"><img src="img/logo.png" alt="" class="logo__picture"><span class="logo__text">Здоровье</span></a></div>
+          <ul class="main-menu header__main-menu">
+            <li class="main-menu__item main-menu__item_sub-menu"><a href="#" class="main-menu__link">Пансионаты</a>
+              <ul class="sub-menu">
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Зенит</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Полет</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Кулон</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Радуга</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Чайка, Московская область</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Чайка, Иркутская область</a></li>
+              </ul>
+            </li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Новости и акции</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Корпоротивным клиентам</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Турагенствам</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">О компании</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+          </ul>
+          <form action="/" class="search-header header__search-header">
+            <input type="text" placeholder="Поиск" class="search-header__input">
+            <button type="submit" class="search-header__button">Найти</button>
+          </form><a href="#" class="header__search"><i class="icon icon_search"></i></a>
+          <div class="header__datetime"><span id="time" class="header__time">11:28</span><span id="date" class="header__date">26 декабря</span></div>
+          <div class="header__call"><span class="header__call-label">Звоните круглосуточно:</span><a href="tel:84959918855" class="header__phone">(495) 991-88-55</a></div>
+        </div>
+      </header>
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a> /</li>
+          <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Пансионаты</a> /</li>
+          <li class="breadcrumbs__item">Пансионат «ЗЕНИТ»</li>
+        </ul>
+        <div class="title-pansions">
+          <div class="title-pansions__side">
+            <h1 class="title-pansions__title">Пансионат «ЗЕНИТ» </h1>
+          </div>
+          <div class="title-pansions__side">
+            <p class="title-pansions__addres"><i class="icon icon_marker title-pansions__icon"></i><span class="title-pansions__text">Республика Крым, Судак, с. Морское, ул. Пушкина, 1. </span><a href="#" class="title-pansions__link">Посмотреть на карте</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="container container_clearfix">
+        <div class="sidebar sidebar_left">
+          <form action="/" class="search-form search-form_sidebar">
+            <h3 class="search-form__title">Подберите номер</h3>
+            <p class="search-form__description">в пансионатах ОАК</p>
+            <div class="search-form__control">
+              <label for="datein" class="search-form__label">Дата заезда</label>
+              <input type="text" id="datein" class="search-form__input datetimepicker">
+            </div>
+            <div class="search-form__control">
+              <label for="dateout" class="search-form__label">Дата отъезда</label>
+              <input type="text" id="dateout" class="search-form__input datetimepicker">
+            </div>
+            <div class="search-form__control">
+              <label for="people" class="search-form__label">Количество гостей</label>
+              <select name="people" id="people" class="search-form__select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="search-form__control">
+              <button type="submit" class="search-form__button">Найти</button>
+            </div>
+          </form>
+          <div class="call">
+            <h4 class="call__title">Звоните!</h4>
+            <p class="call__description">Наши специалисты проконсультируют Вас с понедельника по пятницу круглосуточно</p><a href="tel:84959918855" class="call__phone"><i class="icon icon_call call__icon"></i>8 (495) 991-88-55</a><a href="mailto:info@oak.ru" class="call__mail"><i class="icon icon_mail call__icon"></i>Задать вопрос</a>
+          </div>
+        </div>
+        <div class="pansion-details">
+          <div class="pansion-slider">
+            <div class="pansion-slider__stage">
+              <div class="pansion-slider__carousel pansion-slider__carousel_stage">
+                <ul class="pansion-slider__list">
+                  <li class="pansion-slider__item"><img src="img/pansions.jpg" alt="" class="pansion-slider__image"></li>
+                  <li class="pansion-slider__item"><img src="http://placekitten.com/g/727/420" alt="" class="pansion-slider__image"></li>
+                  <li class="pansion-slider__item"><img src="http://placekitten.com/g/727/420" alt="" class="pansion-slider__image"></li>
+                  <li class="pansion-slider__item"><img src="http://placekitten.com/g/727/420" alt="" class="pansion-slider__image"></li>
+                  <li class="pansion-slider__item"><img src="http://placekitten.com/g/727/420" alt="" class="pansion-slider__image"></li>
+                  <li class="pansion-slider__item"><img src="img/pansions.jpg" alt="" class="pansion-slider__image"></li>
+                </ul>
+              </div><a href="javascript:;" class="pansion-slider__prev pansion-slider__prev_stage"><span class="pansion-slider__prev-icon">&lsaquo;</span></a><a href="javascript:;" class="pansion-slider__next pansion-slider__next_stage"><span class="pansion-slider__next-icon">&rsaquo;</span></a>
+            </div>
+            <div class="pansion-slider__navigation"><a href="javascript:;" class="pansion-slider__prev pansion-slider__prev_navigation"><i class="icon icon_up"></i></a>
+              <div class="pansion-slider__carousel pansion-slider__carousel_navigation">
+                <ul class="pansion-slider__list">
+                  <li class="pansion-slider__item pansion-slider__item_nav"><img src="img/pansions.jpg" alt="" class="pansion-slider__image pansion-slider__image_nav"></li>
+                  <li class="pansion-slider__item pansion-slider__item_nav"><img src="http://placekitten.com/g/727/420" alt="" class="pansion-slider__image pansion-slider__image_nav"></li>
+                  <li class="pansion-slider__item pansion-slider__item_nav"><img src="http://placekitten.com/g/727/420" alt="" class="pansion-slider__image pansion-slider__image_nav"></li>
+                  <li class="pansion-slider__item pansion-slider__item_nav"><img src="http://placekitten.com/g/727/420" alt="" class="pansion-slider__image pansion-slider__image_nav"></li>
+                  <li class="pansion-slider__item pansion-slider__item_nav"><img src="http://placekitten.com/g/727/420" alt="" class="pansion-slider__image pansion-slider__image_nav"></li>
+                  <li class="pansion-slider__item pansion-slider__item_nav"><img src="img/pansions.jpg" alt="" class="pansion-slider__image pansion-slider__image_nav"></li>
+                </ul>
+              </div><a href="javascript:;" class="pansion-slider__next pansion-slider__next_navigation"><i class="icon icon_down"></i></a>
+            </div>
+          </div>
+          <div class="nav-cam">
+            <div class="nav-cam__side nav-cam__side_left">
+              <ul class="nav">
+                <li class="nav__item active">Описание</li>
+                <li class="nav__item">Номера и Цены</li>
+                <li class="nav__item">Удобства и услуги</li>
+              </ul>
+            </div>
+            <div class="nav-cam__side nav-cam__side_right"><a href="javascript:;" class="cam"><i class="icon icon_cam cam__icon"></i><span class="cam__text">Веб-камера онлайн</span></a></div>
+          </div>
+          <div class="tabs">
+            <div class="tab tab_description active">
+              <div class="tab__side tab__side_left">
+                <ul class="desc-icon">
+                  <li class="desc-icon__item"><i class="icon icon_cold"></i><span class="desc-icon__tooltip">Круглосуточная стойка регистрации</span></li>
+                  <li class="desc-icon__item"><i class="icon icon_dinner"></i><span class="desc-icon__tooltip">Круглосуточная стойка регистрации</span></li>
+                  <li class="desc-icon__item"><i class="icon icon_cocktail"></i><span class="desc-icon__tooltip">Круглосуточная стойка регистрации</span></li>
+                  <li class="desc-icon__item"><i class="icon icon_shower"></i><span class="desc-icon__tooltip">Круглосуточная стойка регистрации</span></li>
+                  <li class="desc-icon__item"><i class="icon icon_wi-fi"></i><span class="desc-icon__tooltip">Круглосуточная стойка регистрации</span></li>
+                  <li class="desc-icon__item"><i class="icon icon_bed"></i><span class="desc-icon__tooltip">Круглосуточная стойка регистрации</span></li>
+                  <li class="desc-icon__item"><i class="icon icon_child"></i><span class="desc-icon__tooltip">Круглосуточная стойка регистрации</span></li>
+                  <li class="desc-icon__item"><i class="icon icon_animal"></i><span class="desc-icon__tooltip">Круглосуточная стойка регистрации</span></li>
+                  <li class="desc-icon__item"><i class="icon icon_tv"></i><span class="desc-icon__tooltip">Круглосуточная стойка регистрации</span></li>
+                  <li class="desc-icon__item"><i class="icon icon_24"></i><span class="desc-icon__tooltip">Круглосуточная стойка регистрации</span></li>
+                </ul>
+                <div class="tab__text">
+                  <p class="tab__paragraph">Современный четырехзвездочный отель удобно расположен всего в 500 метрах от центрального железнодорожного вокзала. К услугам гостей бесплатный Wi-Fi и круглосуточная стойка регистрации.</p>
+                  <p class="tab__paragraph">Светлые кондиционированные номера оформлены в классическом стиле с использованием ярких тонов. Каждый номер оборудован телевизором с плоским экраном и собственной ванной комнатой с феном.</p>
+                  <p class="tab__paragraph">В ресторане можно заказать блюда баварской кухни и различные сорта пива. В лобби-баре вам предложат широкий выбор вин и коктейлей.</p>
+                </div>
+                <ul class="list-tab">
+                  <li class="list-tab__item"><span class="list-tab__title">ЗАЕЗД </span><span class="black-text">с 15:00</span></li>
+                  <li class="list-tab__item"><span class="list-tab__title">ОТЪЕЗД </span><span class="black-text">до 12:00</span></li>
+                  <li class="list-tab__item"><span class="list-tab__title">Отмена и предоплата</span>
+                    <p class="list-tab__text black-text">Правила отмены бронирования и предоплаты зависят от категории номера. Пожалуйста, ознакомьтесь с условиями бронирования номера при выборе номера из показанных выше.</p>
+                  </li>
+                  <li class="list-tab__item"><span class="list-tab__title">Разрешается проживание детей любого возраста</span>
+                    <p class="list-tab__text black-text"><span class="blue-text">Бесплатно!</span>При размещении всех детей младше 12 лет на имеющихся кроватях проживание им предоставляется бесплатно.</p>
+                    <p class="list-tab__text black-text"><span class="blue-text">Бесплатно!</span>При размещении всех детей младше 2 лет на детских кроватках проживание им предоставляется бесплатно.</p>
+                    <p class="list-tab__text black-text">При размещении всех детей старшего возраста или взрослых на дополнительных кроватях взимается RUB 750 с человека за ночь.</p>
+                    <p class="list-tab__text black-text">Максимальное количество дополнительных кроватей/детских кроваток в номере – 2.</p>
+                    <p class="list-tab__text black-text">Дополнительные кровати и детские кроватки предоставляются по запросу. Требуется подтверждение со стороны отеля о предоставлении данной услуги.</p>
+                  </li>
+                  <li class="list-tab__item"><span class="list-tab__title">Размещение домашних животных</span>
+                    <p class="list-tab__text black-text">Допускается по предварительному запросу. Данная услуга может быть платной.</p>
+                  </li>
+                </ul>
+                <div class="tab__text">
+                  <p class="tab__paragraph">Дополнительные услуги не включаются автоматически в общую стоимость и оплачиваются отдельно во время вашего проживания.</p>
+                </div>
+              </div>
+              <div class="tab__side tab__side_right">
+                <div class="book">
+                  <button class="book__button _book-popup-link">Забронировать</button><span class="book__text">Оставьте заявку, и мы свяжемся с Вами для уточнения деталей.</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab tab_room">
+              <div class="tab__side tab__side_left">
+                <div class="rooms">
+                  <h3 class="rooms__title">Тип номера</h3>
+                  <div class="room">
+                    <p class="room__type">Стандарт</p>
+                    <ul class="room__links">
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Стандартный 2-местный номер с 1 кроватью</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Стандартный 3-местный номер с 2 кроватями</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Стандартный 3-местный номер с 3 кроватями</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Стандартный 4-местный номер с 4 кроватями</a></li>
+                    </ul>
+                  </div>
+                  <div class="room">
+                    <p class="room__type">Эконом</p>
+                    <ul class="room__links">
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Эконом 2-местный номер с 1 кроватью</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Эконом 3-местный номер с 2 кроватями</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Эконом 3-местный номер с 3 кроватями</a></li>
+                    </ul>
+                  </div>
+                  <div class="room">
+                    <p class="room__type">Семейный</p>
+                    <ul class="room__links">
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Семейный 2-местный номер с 1 кроватью</a></li>
+                    </ul>
+                  </div>
+                  <div class="room">
+                    <p class="room__type">Полулюкс</p>
+                    <ul class="room__links">
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Полулюкс 2-местный номер с 1 кроватью</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Полулюкс 3-местный номер с 2 кроватями</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Полулюкс 2-местный номер с 1 кроватью</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Полулюкс 3-местный номер с 2 кроватями</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Полулюкс 2-местный номер с 1 кроватью</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Полулюкс 3-местный номер с 2 кроватями</a></li>
+                    </ul>
+                  </div>
+                  <div class="room">
+                    <p class="room__type">Люкс</p>
+                    <ul class="room__links">
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Люкс 1-местный номер с 1 кроватью</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Люкс 3-местный номер с 2 кроватями</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Люкс 2-местный номер с 1 кроватью</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Люкс 3-местный номер с 2 кроватями</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Люкс 2-местный номер с 1 кроватью</a></li>
+                      <li class="room__item"><a href="javascript:;" class="room__link _room-popup-link">Люкс 3-местный номер с 2 кроватями</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="tab__side tab__side_right">
+                <div class="book">
+                  <button class="book__button _book-popup-link">Забронировать</button><span class="book__text">Оставьте заявку, и мы свяжемся с Вами для уточнения деталей.</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab tab_service">
+              <div class="service-cols">
+                <div class="service-cols__col">
+                  <h3 class="service-cols__title">Ванная комната</h3>
+                  <ul class="list">
+                    <li class="list__item list__item_service">Душ</li>
+                    <li class="list__item list__item_service">Туалет</li>
+                    <li class="list__item list__item_service">Бесплатные туалетные принадлежности</li>
+                    <li class="list__item list__item_service">Фен</li>
+                    <li class="list__item list__item_service">Тапочки</li>
+                  </ul>
+                  <h3 class="service-cols__title">Спальня</h3>
+                  <ul class="list">
+                    <li class="list__item list__item_service">Шкаф/гардероб</li>
+                    <li class="list__item list__item_service">Будильник</li>
+                  </ul>
+                  <h3 class="service-cols__title">Спорт и отдых</h3>
+                  <ul class="list">
+                    <li class="list__item list__item_service">Прокат велосипедов</li>
+                    <li class="list__item list__item_service">Вечерняя программа</li>
+                  </ul>
+                  <h3 class="service-cols__title">Гостиная зона</h3>
+                  <ul class="list">
+                    <li class="list__item list__item_service">Рабочий стол</li>
+                  </ul>
+                  <h3 class="service-cols__title">Медиа и технологии</h3>
+                  <ul class="list">
+                    <li class="list__item list__item_service">Телефон</li>
+                    <li class="list__item list__item_service">Телевизор с плоским экраном</li>
+                    <li class="list__item list__item_service">Платные ТВ-каналы</li>
+                    <li class="list__item list__item_service">Кабельные каналы</li>
+                  </ul>
+                  <h3 class="service-cols__title">Питание и напитки</h3>
+                  <ul class="list">
+                    <li class="list__item list__item_service">Бар</li>
+                    <li class="list__item list__item_service">Ресторан (меню)</li>
+                    <li class="list__item list__item_service">Ресторан («шведский стол»)</li>
+                  </ul>
+                </div>
+                <div class="service-cols__col">
+                  <h3 class="service-cols__title">Интернет</h3>
+                  <p class="service-cols__text"><span class="blue-text">Бесплатно!</span> Wi-Fi предоставляется на территории всего отеля бесплатно.</p>
+                  <h3 class="service-cols__title">Парковка</h3>
+                  <p class="service-cols__text"><span class="blue-text">Бесплатно!</span> Бесплатная частная парковка на месте (предварительный заказ не требуется).</p>
+                  <h3 class="service-cols__title">Сервисы</h3>
+                  <ul class="list">
+                    <li class="list__item list__item_service">Доставка еды и напитков в номер</li>
+                    <li class="list__item list__item_service">Круглосуточная стойка регистрации</li>
+                    <li class="list__item list__item_service">Экскурсионное бюро</li>
+                    <li class="list__item list__item_service">Камера хранения багажа</li>
+                    <li class="list__item list__item_service">Банкоматна территории отеля</li>
+                    <li class="list__item list__item_service">Услуги консьержа</li>
+                    <li class="list__item list__item_service">Прачечная</li>
+                    <li class="list__item list__item_service">Химчистка</li>
+                    <li class="list__item list__item_service">Услуги по глажению одежды</li>
+                    <li class="list__item list__item_service">Чистка обуви</li>
+                    <li class="list__item list__item_service">Конференц-зал/Банкетный зал</li>
+                    <li class="list__item list__item_service">Факс/Ксерокопирование</li>
+                    <li class="list__item list__item_service">Услуга «звонок-будильник»</li>
+                  </ul>
+                </div>
+                <div class="service-cols__col">
+                  <h3 class="service-cols__title">Общие</h3>
+                  <ul class="list">
+                    <li class="list__item list__item_service">Сейф</li>
+                    <li class="list__item list__item_service">Номера для некурящих</li>
+                    <li class="list__item list__item_service">Удобства для гостей с ограниченными физическими возможностями</li>
+                    <li class="list__item list__item_service">Лифт</li>
+                    <li class="list__item list__item_service">Курение на всей территории запрещено</li>
+                    <li class="list__item list__item_service">Кондиционер</li>
+                    <li class="list__item list__item_service">Места для курения</li>
+                    <li class="list__item list__item_service">Отопление</li>
+                    <li class="list__item list__item_service">Ковровое покрытие</li>
+                    <li class="list__item list__item_service">Сейф</li>
+                    <li class="list__item list__item_service">Доступны смежные номера</li>
+                  </ul>
+                  <h3 class="service-cols__title">Персонал говорит</h3>
+                  <ul class="list">
+                    <li class="list__item list__item_service">На русском</li>
+                    <li class="list__item list__item_service">На английском</li>
+                    <li class="list__item list__item_service">На немецком</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab tab_video">
+              <div class="video-cam">
+                <h1 class="video-cam__title">Веб-камера в Морском</h1>
+                <p class="video-cam__description">Веб-камера установлена на пляже</p>
+                <video id="my-video" controls preload="auto" poster="img/poster.jpg" data-setup="{}" class="video-js video-cam__video">
+                  <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                  <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                  <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="book-bottom">
+            <div class="book-bottom__side book-bottom__side_left">
+              <p class="book-bottom__text">Если Вам нравится наш пансионат, то предлагаем забронировать номер для Вас.</p>
+            </div>
+            <div class="book-bottom__side book-bottom__side_right">
+              <button class="book-bottom__button _book-popup-link">Забронировать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container"><a href="#" class="book-in-site book-in-site_margin"><i class="icon icon_book book-in-site__icon"></i><span class="book-in-site__text">Забронируйте номер прямо на сайте. Оставьте заявку просто и быстро.</span></a></div>
+      <div class="container">
+        <div class="subscription subscription_margin_small">
+          <div class="subscription__heading">
+            <h2 class="subscription__title">Узнавай о выгодных предложениях первым</h2>
+            <p class="subscription__description">Подпишись на рассылку новостей и статей</p>
+          </div>
+          <form action="" class="subscription__form">
+            <input type="email" placeholder="Адрес электронной почты" required class="subscription__input">
+            <button type="submit" class="subscription__button">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__side footer__side_left"><a href="/"><img src="img/logo-footer.png" alt=""></a></div>
+          <div class="footer__side footer__side_right"><a href="#" class="footer__article">Статьи</a><span class="join__title">Присоединяйтесь:</span>
+            <ul class="join footer__join">
+              <li class="join__item"><a href="#" class="join__link"><i class="icon icon_vk"></i></a></li>
+              <li class="join__item"><a href="#" class="join__link"><i class="icon icon_fb"></i></a></li>
+              <li class="join__item"><a href="#" class="join__link"><i class="icon icon_tw"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__side footer__side_left footer__side_left_bottom">
+            <p class="copyright">&copy; 2015. Пансионаты ОАК. Все права защищены.</p>
+            <p class="copyright">Воспроизведение или распростронение материалов в любой форме может производиться только с письменного разрешения ОАК.</p>
+          </div>
+          <div class="footer__side footer__side_right footer__side_right_bottom">
+            <div class="footer-error">
+              <p class="footer-error__text">Нашли опечатку на сайте ? Выделите её и нажмите <span class="footer-error__key blue-text">Ctrl+Enter.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="hidden">
+      <div class="room-popup">
+        <h2 class="room-popup__title">Стандартный 2-местный номер с 1 кроватью (пансионат «Зенит»)</h2>
+        <div class="room-slider">
+          <div class="room-slider__stage">
+            <div class="room-slider__carousel room-slider__carousel_stage">
+              <ul class="room-slider__list">
+                <li class="room-slider__item"><img src="img/pansions.jpg" alt="" class="room-slider__image"></li>
+                <li class="room-slider__item"><img src="http://placekitten.com/g/727/420" alt="" class="room-slider__image"></li>
+                <li class="room-slider__item"><img src="http://placekitten.com/g/727/420" alt="" class="room-slider__image"></li>
+                <li class="room-slider__item"><img src="http://placekitten.com/g/727/420" alt="" class="room-slider__image"></li>
+                <li class="room-slider__item"><img src="http://placekitten.com/g/727/420" alt="" class="room-slider__image"></li>
+                <li class="room-slider__item"><img src="img/pansions.jpg" alt="" class="room-slider__image"></li>
+              </ul>
+            </div><a href="javascript:;" class="room-slider__prev room-slider__prev_stage"><span class="room-slider__prev-icon">&lsaquo;</span></a><a href="javascript:;" class="room-slider__next room-slider__next_stage"><span class="room-slider__next-icon">&rsaquo;</span></a>
+          </div>
+          <div class="room-slider__navigation"><a href="javascript:;" class="room-slider__prev room-slider__prev_navigation"><i class="icon icon_up"></i></a>
+            <div class="room-slider__carousel room-slider__carousel_navigation">
+              <ul class="room-slider__list">
+                <li class="room-slider__item room-slider__item_nav"><img src="img/pansions.jpg" alt="" class="room-slider__image room-slider__image_nav"></li>
+                <li class="room-slider__item room-slider__item_nav"><img src="http://placekitten.com/g/727/420" alt="" class="room-slider__image room-slider__image_nav"></li>
+                <li class="room-slider__item room-slider__item_nav"><img src="http://placekitten.com/g/727/420" alt="" class="room-slider__image room-slider__image_nav"></li>
+                <li class="room-slider__item room-slider__item_nav"><img src="http://placekitten.com/g/727/420" alt="" class="room-slider__image room-slider__image_nav"></li>
+                <li class="room-slider__item room-slider__item_nav"><img src="http://placekitten.com/g/727/420" alt="" class="room-slider__image room-slider__image_nav"></li>
+                <li class="room-slider__item room-slider__item_nav"><img src="img/pansions.jpg" alt="" class="room-slider__image room-slider__image_nav"></li>
+              </ul>
+            </div><a href="javascript:;" class="room-slider__next room-slider__next_navigation"><i class="icon icon_down"></i></a>
+          </div>
+        </div>
+        <p class="room-popup__count-people">Количество гостей: 2</p>
+        <div class="room-popup__text">
+          <p class="room-popup__paragraph">Номер с кондиционером, телевизором с плоским экраном и собственной ванной комнатой. В распоряжении гостей мини-бар, тапочки и бесплатная вода по прибытии. Двуспальная кровать предоставляется по запросу.</p>
+          <p class="room-popup__paragraph">Бесплатный Wi-Fi во всех номерах. <br>Площадь номера: 24 м² <br>Размер кровати/-ей: 2 односпальные кровати или 1 большая двуспальная кровать.</p>
+        </div>
+        <h3 class="room-popup__subtitle">Стоимость проживания </h3>
+        <p class="room-popup__elaboration">указана для 1 гостя</p>
+        <table class="room-popup__table">
+          <thead class="room-popup__thead">
+            <tr>
+              <td class="room-popup__td room-popup__td_left">Период</td>
+              <td class="room-popup__td">15 апреля – 30 мая, <br>1 июня – 10 октября</td>
+              <td class="room-popup__td">11 июня – 30 сентября</td>
+              <td class="room-popup__td">Июль, август</td>
+            </tr>
+          </thead>
+          <tr>
+            <td class="room-popup__td room-popup__td_left">Взрослый</td>
+            <td class="room-popup__td">650</td>
+            <td class="room-popup__td">650</td>
+            <td class="room-popup__td">857</td>
+          </tr>
+          <tr>
+            <td class="room-popup__td room-popup__td_left">Ребенок до 5 лет</td>
+            <td class="room-popup__td">585</td>
+            <td class="room-popup__td">585</td>
+            <td class="room-popup__td">771</td>
+          </tr>
+          <tr>
+            <td class="room-popup__td room-popup__td_left">Ребенок до 12 лет</td>
+            <td class="room-popup__td">585</td>
+            <td class="room-popup__td">585</td>
+            <td class="room-popup__td">771</td>
+          </tr>
+          <tr>
+            <td class="room-popup__td room-popup__td_left">Взрослый или ребенок <br>на дополнительное место</td>
+            <td class="room-popup__td">520</td>
+            <td class="room-popup__td">520</td>
+            <td class="room-popup__td">686</td>
+          </tr>
+          <tr>
+            <td class="room-popup__td room-popup__td_left">Одноместное размещение <br>без подселения</td>
+            <td class="room-popup__td">520</td>
+            <td class="room-popup__td">520</td>
+            <td class="room-popup__td">686</td>
+          </tr>
+        </table>
+        <div class="book-bottom book-bottom_width_100">
+          <div class="book-bottom__side book-bottom__side_left">
+            <p class="book-bottom__text">Если Вам нравится наш пансионат, то предлагаем забронировать номер для Вас.</p>
+          </div>
+          <div class="book-bottom__side book-bottom__side_right">
+            <button class="book-bottom__button _book-popup-link">Забронировать</button>
+          </div>
+        </div>
+        <h3 class="room-popup__subtitle room-popup__subtitle_center">Номера данной категории на других базах отдыха</h3>
+        <div class="similar-room room-popup__similar-room">
+          <div class="similar-room__prev"><i class="icon icon_r-prev"></i></div>
+          <div class="similar-room__items">
+            <div class="similar-room__item"><a href="javascript:;" class="similar-room__link"><img src="img/similar-room.jpg" alt="" class="similar-room__pickture">
+                <p class="similar-room__text">Зенит</p></a></div>
+            <div class="similar-room__item"><a href="javascript:;" class="similar-room__link"><img src="img/similar-room.jpg" alt="" class="similar-room__pickture">
+                <p class="similar-room__text">Полет</p></a></div>
+            <div class="similar-room__item"><a href="javascript:;" class="similar-room__link"><img src="img/similar-room.jpg" alt="" class="similar-room__pickture">
+                <p class="similar-room__text">Радуга</p></a></div>
+            <div class="similar-room__item"><a href="javascript:;" class="similar-room__link"><img src="img/similar-room.jpg" alt="" class="similar-room__pickture">
+                <p class="similar-room__text">Зенит</p></a></div>
+            <div class="similar-room__item"><a href="javascript:;" class="similar-room__link"><img src="img/similar-room.jpg" alt="" class="similar-room__pickture">
+                <p class="similar-room__text">Зенит</p></a></div>
+          </div>
+          <div class="similar-room__next"><i class="icon icon_r-next"></i></div>
+        </div>
+      </div>
+      <div class="book-popup">
+        <h2 class="book-popup__title">Оставить заявку</h2>
+        <p class="book-popup__description">Уточните свой запрос и наш менеджер свяжется с  вами по наличию свободных мест</p>
+        <p class="book-popup__mandatory">* обязательные для заполнения поля</p>
+        <form action="/" class="form-book">
+          <div class="form-book__sides">
+            <div class="form-book__side form-book__side_left">
+              <div class="form-book__control">
+                <label for="pansions" class="form-book__label">Пансионат*</label>
+                <select id="pansions" name="" class="form-book__select wide">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-book__side form-book__side_right">
+              <div class="form-book__control">
+                <label for="cat-room" class="form-book__label">Категория номера*</label>
+                <select id="cat-room" name="" class="form-book__select wide">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-book__side form-book__side_left">
+              <div class="form-book__control">
+                <label for="datein-book" class="form-book__label">Дата заезда*</label>
+                <input id="datein-book" type="text" class="form-book__input form-book__input_date datetimepicker">
+              </div>
+            </div>
+            <div class="form-book__side form-book__side_right">
+              <div class="form-book__control">
+                <label for="dateout-book" class="form-book__label">Дата отъезда*</label>
+                <input id="dateout-book" type="text" class="form-book__input form-book__input_date datetimepicker">
+              </div>
+            </div>
+          </div>
+          <div class="form-book__sides">
+            <div class="form-book__side form-book__side_pepole form-book__side_left">
+              <div class="form-book__control">
+                <label for="adult-count" class="form-book__label">Количество взрослых</label>
+                <select id="adult-count" name="" class="form-book__select wide">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-book__side form-book__side_pepole form-book__side_right">
+              <div class="form-book__control">
+                <label for="kid-count" class="form-book__label">Количество детей</label>
+                <select id="kid-count" name="" class="form-book__select wide">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-book__line">
+            <input id="transfer" type="checkbox" class="form-book__checkbox">
+            <label for="transfer" class="form-book__label form-book__label_transfer">Нужен трансфер*</label>
+          </div>
+          <div class="form-book__line">
+            <label for="email" class="form-book__label">Почтовый адрес</label>
+            <input id="email" type="text" class="form-book__input">
+          </div>
+          <div class="form-book__line">
+            <label for="phone" class="form-book__label form-book__label_phone">Телефон*</label>
+            <input id="phone" type="text" class="data-inputmask form-book__input form-book__input_phone">
+          </div>
+          <div class="form-book__line">
+            <label for="msg" class="form-book__label">Дополнительная информация</label>
+            <textarea id="msg" rows="4" class="form-book__textarea"></textarea>
+          </div>
+          <div class="form-book__line">
+            <button type="submit" class="form-book__button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div><!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script><![endif]-->
+    <script>
+      var scr = {"scripts":[
+      {"src" : "libs/modernizr/modernizr.js", "async" : false},
+      {"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+      {"src" : "libs/inputmask/input.mask.js", "async" : false},
+      {"src" : "libs/owl/owl.carousel.min.js", "async" : false},
+      {"src" : "libs/nice-select/jquery.nice-select.min.js", "async" : false},
+      {"src" : "libs/datetimepicker/jquery.datetimepicker.full.min.js", "async" : false},
+      {"src" : "https://api-maps.yandex.ru/2.1/?lang=ru_RU", "async" : false},
+      {"src" : "http://vjs.zencdn.net/5.6.0/video.js", "async" : false},
+      {"src" : "libs/magnific-popup/jquery.magnific-popup.min.js", "async" : false},
+      {"src" : "libs/jcarousel/jquery.jcarousel.min.js", "async" : false},
+      {"src" : "js/carousel.js", "async" : false},
+      {"src" : "js/room-carousel.js", "async" : false},
+      {"src" : "js/common.js", "async" : false}
+      ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="http://vjs.zencdn.net/5.6.0/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="_main.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="container">
+          <div class="logo header__logo"><a href="/" class="logo__link"><img src="img/logo.png" alt="" class="logo__picture"><span class="logo__text">Здоровье</span></a></div>
+          <ul class="main-menu header__main-menu">
+            <li class="main-menu__item main-menu__item_sub-menu"><a href="#" class="main-menu__link">Пансионаты</a>
+              <ul class="sub-menu">
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Зенит</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Полет</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Кулон</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Радуга</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Чайка, Московская область</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Чайка, Иркутская область</a></li>
+              </ul>
+            </li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Новости и акции</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Корпоротивным клиентам</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Турагенствам</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">О компании</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+          </ul>
+          <form action="/" class="search-header header__search-header">
+            <input type="text" placeholder="Поиск" class="search-header__input">
+            <button type="submit" class="search-header__button">Найти</button>
+          </form><a href="#" class="header__search"><i class="icon icon_search"></i></a>
+          <div class="header__datetime"><span id="time" class="header__time">11:28</span><span id="date" class="header__date">26 декабря</span></div>
+          <div class="header__call"><span class="header__call-label">Звоните круглосуточно:</span><a href="tel:84959918855" class="header__phone">(495) 991-88-55</a></div>
+        </div>
+      </header>
+      <div class="slider">
+        <div class="slides">
+          <div class="slides__item">
+            <div class="container">
+              <h2 class="slides__title">Каникулы в &#171;Зените&#187;</h2>
+              <p class="slides__description">Приглашаем отметить Новый год в пансионате всей семьёй и провести новогодний отпуск на берегу моря</p>
+            </div>
+          </div>
+          <div style="background-image: url('http://placekitten.com/g/1920/930')" class="slides__item">
+            <div class="container">
+              <h2 class="slides__title">Каникулы в &#171;Зените&#187;</h2>
+              <p class="slides__description">Приглашаем отметить Новый год в пансионате всей семьёй и провести новогодний отпуск на берегу моря</p>
+            </div>
+          </div>
+          <div style="background-image: url('http://placekitten.com/g/1920/929')" class="slides__item">
+            <div class="container">
+              <h2 class="slides__title">Каникулы в &#171;Зените&#187;</h2>
+              <p class="slides__description">Приглашаем отметить Новый год в пансионате всей семьёй и провести новогодний отпуск на берегу моря</p>
+            </div>
+          </div>
+          <div class="slides__item">
+            <div class="container">
+              <h2 class="slides__title">Каникулы в &#171;Зените&#187;</h2>
+              <p class="slides__description">Приглашаем отметить Новый год в пансионате всей семьёй и провести новогодний отпуск на берегу моря</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__search">
+          <div class="container">
+            <form action="/" class="search-form">
+              <h3 class="search-form__title">Найдите лучшие предложения</h3>
+              <p class="search-form__description">в пансионатах ОАК</p>
+              <div class="search-form__control">
+                <label for="datein" class="search-form__label">Дата заезда</label>
+                <input type="text" id="datein" class="search-form__input datetimepicker">
+              </div>
+              <div class="search-form__control">
+                <label for="dateout" class="search-form__label">Дата отъезда</label>
+                <input type="text" id="dateout" class="search-form__input datetimepicker">
+              </div>
+              <div class="search-form__control">
+                <label for="people" class="search-form__label">Количество гостей</label>
+                <select name="people" id="people" class="search-form__select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div class="search-form__control">
+                <button type="submit" class="search-form__button">Найти</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="slides-nav slides__nav">
+          <div class="container"><i class="icon icon_s-prev slides-nav__prev"></i>
+            <div class="slides-nav__dots"></div><i class="icon icon_s-next slides-nav__next"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="container"><a href="#" class="book-in-site _book-popup-link"><i class="icon icon_book book-in-site__icon"></i><span class="book-in-site__text">Забронируйте номер прямо на сайте. Оставьте заявку просто и быстро.</span></a>
+          <div class="cards">
+            <div class="card">
+              <div class="card__heading"><a href="#" class="card__link">
+                  <h2 class="card__title">Пансионат "Зенит"</h2><span class="card__addres">Республика Крым, Морское</span></a></div>
+              <div class="card__slides">
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide1.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide2.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide3.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide4.jpg" alt=""></a></div>
+              </div>
+              <div class="card__nav"><i class="icon icon_prev card__nav-prev"></i><i class="icon icon_next card__nav-next"></i></div>
+            </div>
+            <div class="card card_margin">
+              <div class="card__heading"><a href="#" class="card__link">
+                  <h2 class="card__title">Пансионат "Зенит"</h2><span class="card__addres">Республика Крым, Морское</span></a></div>
+              <div class="card__slides">
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide1.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide2.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide3.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide4.jpg" alt=""></a></div>
+              </div>
+              <div class="card__nav"><i class="icon icon_prev card__nav-prev"></i><i class="icon icon_next card__nav-next"></i></div>
+            </div>
+            <div class="card">
+              <div class="card__heading"><a href="#" class="card__link">
+                  <h2 class="card__title">Пансионат "Зенит"</h2><span class="card__addres">Республика Крым, Морское</span></a></div>
+              <div class="card__slides">
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide1.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide2.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide3.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide4.jpg" alt=""></a></div>
+              </div>
+              <div class="card__nav"><i class="icon icon_prev card__nav-prev"></i><i class="icon icon_next card__nav-next"></i></div>
+            </div>
+            <div class="card">
+              <div class="card__heading"><a href="#" class="card__link">
+                  <h2 class="card__title">Пансионат "Зенит"</h2><span class="card__addres">Республика Крым, Морское</span></a></div>
+              <div class="card__slides">
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide1.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide2.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide3.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide4.jpg" alt=""></a></div>
+              </div>
+              <div class="card__nav"><i class="icon icon_prev card__nav-prev"></i><i class="icon icon_next card__nav-next"></i></div>
+            </div>
+            <div class="card card_margin">
+              <div class="card__heading"><a href="#" class="card__link">
+                  <h2 class="card__title">Пансионат "Зенит"</h2><span class="card__addres">Республика Крым, Морское</span></a></div>
+              <div class="card__slides">
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide1.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide2.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide3.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide4.jpg" alt=""></a></div>
+              </div>
+              <div class="card__nav"><i class="icon icon_prev card__nav-prev"></i><i class="icon icon_next card__nav-next"></i></div>
+            </div>
+            <div class="card">
+              <div class="card__heading"><a href="#" class="card__link">
+                  <h2 class="card__title">Пансионат "Зенит"</h2><span class="card__addres">Республика Крым, Морское</span></a></div>
+              <div class="card__slides">
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide1.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide2.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide3.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide4.jpg" alt=""></a></div>
+              </div>
+              <div class="card__nav"><i class="icon icon_prev card__nav-prev"></i><i class="icon icon_next card__nav-next"></i></div>
+            </div>
+            <div class="card">
+              <div class="card__heading"><a href="#" class="card__link">
+                  <h2 class="card__title">Пансионат "Зенит"</h2><span class="card__addres">Республика Крым, Морское</span></a></div>
+              <div class="card__slides">
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide1.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide2.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide3.jpg" alt=""></a></div>
+                <div class="card__slide"><a href="#" class="card__link"><img src="img/slide4.jpg" alt=""></a></div>
+              </div>
+              <div class="card__nav"><i class="icon icon_prev card__nav-prev"></i><i class="icon icon_next card__nav-next"></i></div>
+            </div>
+            <div class="main-company">
+              <div class="main-company__heading"><a href="#" class="main-company__link">
+                  <h2 class="main-company__title">Базы отдыха ОАК</h2></a></div>
+              <div class="main-company__content">
+                <p class="main-company__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пор лучше своих текстов путь которой последний то свою буквенных предупреждал, за его которое злых.</p>
+                <p class="main-company__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Безопасную оксмокс, знаках путь грамматики.</p>
+                <p class="main-company__text"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-news">
+            <ul class="main-news__nav">
+              <li class="main-news__item"><a href="javascript:;" class="main-news__link main-news__link_news active">Новости</a><span class="main-news__slash">/</span></li>
+              <li class="main-news__item"><a href="javascript:;" class="main-news__link main-news__link_posts">Статьи</a></li>
+            </ul>
+            <div class="main-news__section main-news__section_news open">
+              <div style="background-image: url('img/article.jpg');" class="article"><a href="#" class="article__link">
+                  <div class="article__description">
+                    <snap class="article__date">6.12.2015</snap>
+                    <h3 class="article__title">Каникулы "Дикий запад" в "Зените"</h3>
+                  </div></a></div>
+              <div style="background-image: url('img/article1.jpg');" class="article"><a href="#" class="article__link">
+                  <div class="article__description">
+                    <snap class="article__date">6.12.2015</snap>
+                    <h3 class="article__title">Пансионат "Кулон" разыграл путевки для всей семьи</h3>
+                  </div></a></div>
+              <div style="background-image: url('img/article2.jpg');" class="article"><a href="#" class="article__link">
+                  <div class="article__description">
+                    <snap class="article__date">6.12.2015</snap>
+                    <h3 class="article__title">Каникулы "Дикий запад" в "Зените"</h3>
+                  </div></a></div>
+              <div style="background-image: url('img/article3.jpg');" class="article"><a href="#" class="article__link">
+                  <div class="article__description">
+                    <snap class="article__date">6.12.2015</snap>
+                    <h3 class="article__title">Каникулы "Дикий запад" в "Зените"</h3>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="main-news__section main-news__section_posts">
+            <div style="background-image: url('img/article.jpg');" class="article"><a href="#" class="article__link">
+                <div class="article__description">
+                  <h3 class="article__title">Каникулы "Дикий запад" в "Зените"</h3>
+                </div></a></div>
+            <div style="background-image: url('img/article1.jpg');" class="article"><a href="#" class="article__link">
+                <div class="article__description">
+                  <h3 class="article__title">Пансионат "Кулон" разыграл путевки для всей семьи</h3>
+                </div></a></div>
+            <div style="background-image: url('img/article2.jpg');" class="article"><a href="#" class="article__link">
+                <div class="article__description">
+                  <h3 class="article__title">Каникулы "Дикий запад" в "Зените"</h3>
+                </div></a></div>
+            <div style="background-image: url('img/article3.jpg');" class="article"><a href="#" class="article__link">
+                <div class="article__description">
+                  <h3 class="article__title">Каникулы "Дикий запад" в "Зените"</h3>
+                </div></a></div>
+          </div>
+          <div class="client-slider"><i class="icon icon_c-prev client-slider__prev"></i>
+            <div class="client-slider__clients">
+              <div class="client">
+                <div class="client__item"><img src="img/client/rgd.png" alt="" class="client__image"></div>
+                <div class="client__item"><img src="img/client/skf.png" alt="" class="client__image"></div>
+                <div class="client__item"><img src="img/client/gaz.png" alt="" class="client__image"></div>
+                <div class="client__item"><img src="img/client/sogaz.png" alt="" class="client__image"></div>
+                <div class="client__item"><img src="img/client/ttk.png" alt="" class="client__image"></div>
+                <div class="client__item"><img src="img/client/rgd.png" alt="" class="client__image"></div>
+                <div class="client__item"><img src="img/client/rgd.png" alt="" class="client__image"></div>
+                <div class="client__item"><img src="img/client/rgd.png" alt="" class="client__image"></div>
+              </div>
+            </div><i class="icon icon_c-next client-slider__next"></i>
+          </div>
+          <div class="subscription subscription_margin_big">
+            <div class="subscription__heading">
+              <h2 class="subscription__title">Узнавай о выгодных предложениях первым</h2>
+              <p class="subscription__description">Подпишись на рассылку новостей и статей</p>
+            </div>
+            <form action="" class="subscription__form">
+              <input type="email" placeholder="Адрес электронной почты" required class="subscription__input">
+              <button type="submit" class="subscription__button">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__side footer__side_left"><a href="/"><img src="img/logo-footer.png" alt=""></a></div>
+          <div class="footer__side footer__side_right"><a href="#" class="footer__article">Статьи</a><span class="join__title">Присоединяйтесь:</span>
+            <ul class="join footer__join">
+              <li class="join__item"><a href="#" class="join__link"><i class="icon icon_vk"></i></a></li>
+              <li class="join__item"><a href="#" class="join__link"><i class="icon icon_fb"></i></a></li>
+              <li class="join__item"><a href="#" class="join__link"><i class="icon icon_tw"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__side footer__side_left footer__side_left_bottom">
+            <p class="copyright">&copy; 2015. Пансионаты ОАК. Все права защищены.</p>
+            <p class="copyright">Воспроизведение или распростронение материалов в любой форме может производиться только с письменного разрешения ОАК.</p>
+          </div>
+          <div class="footer__side footer__side_right footer__side_right_bottom">
+            <div class="footer-error">
+              <p class="footer-error__text">Нашли опечатку на сайте ? Выделите её и нажмите <span class="footer-error__key blue-text">Ctrl+Enter.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="hidden">
+      <div class="book-popup">
+        <h2 class="book-popup__title">Оставить заявку</h2>
+        <p class="book-popup__description">Уточните свой запрос и наш менеджер свяжется с  вами по наличию свободных мест</p>
+        <p class="book-popup__mandatory">* обязательные для заполнения поля</p>
+        <form action="/" class="form-book">
+          <div class="form-book__sides">
+            <div class="form-book__side form-book__side_left">
+              <div class="form-book__control">
+                <label for="pansions" class="form-book__label">Пансионат*</label>
+                <select id="pansions" name="" class="form-book__select wide">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-book__side form-book__side_right">
+              <div class="form-book__control">
+                <label for="cat-room" class="form-book__label">Категория номера*</label>
+                <select id="cat-room" name="" class="form-book__select wide">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-book__side form-book__side_left">
+              <div class="form-book__control">
+                <label for="datein-book" class="form-book__label">Дата заезда*</label>
+                <input id="datein-book" type="text" class="form-book__input form-book__input_date datetimepicker">
+              </div>
+            </div>
+            <div class="form-book__side form-book__side_right">
+              <div class="form-book__control">
+                <label for="dateout-book" class="form-book__label">Дата отъезда*</label>
+                <input id="dateout-book" type="text" class="form-book__input form-book__input_date datetimepicker">
+              </div>
+            </div>
+          </div>
+          <div class="form-book__sides">
+            <div class="form-book__side form-book__side_pepole form-book__side_left">
+              <div class="form-book__control">
+                <label for="adult-count" class="form-book__label">Количество взрослых</label>
+                <select id="adult-count" name="" class="form-book__select wide">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-book__side form-book__side_pepole form-book__side_right">
+              <div class="form-book__control">
+                <label for="kid-count" class="form-book__label">Количество детей</label>
+                <select id="kid-count" name="" class="form-book__select wide">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-book__line">
+            <input id="transfer" type="checkbox" class="form-book__checkbox">
+            <label for="transfer" class="form-book__label form-book__label_transfer">Нужен трансфер*</label>
+          </div>
+          <div class="form-book__line">
+            <label for="email" class="form-book__label">Почтовый адрес</label>
+            <input id="email" type="text" class="form-book__input">
+          </div>
+          <div class="form-book__line">
+            <label for="phone" class="form-book__label form-book__label_phone">Телефон*</label>
+            <input id="phone" type="text" class="data-inputmask form-book__input form-book__input_phone">
+          </div>
+          <div class="form-book__line">
+            <label for="msg" class="form-book__label">Дополнительная информация</label>
+            <textarea id="msg" rows="4" class="form-book__textarea"></textarea>
+          </div>
+          <div class="form-book__line">
+            <button type="submit" class="form-book__button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div><!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script><![endif]-->
+    <script>
+      var scr = {"scripts":[
+      {"src" : "libs/modernizr/modernizr.js", "async" : false},
+      {"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+      {"src" : "libs/inputmask/input.mask.js", "async" : false},
+      {"src" : "libs/owl/owl.carousel.min.js", "async" : false},
+      {"src" : "libs/nice-select/jquery.nice-select.min.js", "async" : false},
+      {"src" : "libs/datetimepicker/jquery.datetimepicker.full.min.js", "async" : false},
+      {"src" : "https://api-maps.yandex.ru/2.1/?lang=ru_RU", "async" : false},
+      {"src" : "http://vjs.zencdn.net/5.6.0/video.js", "async" : false},
+      {"src" : "libs/magnific-popup/jquery.magnific-popup.min.js", "async" : false},
+      {"src" : "libs/jcarousel/jquery.jcarousel.min.js", "async" : false},
+      {"src" : "js/carousel.js", "async" : false},
+      {"src" : "js/room-carousel.js", "async" : false},
+      {"src" : "js/common.js", "async" : false}
+      ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+    </script>
+  </body>
+</html>
